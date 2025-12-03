@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método ACTIVA | Alto Rendimiento y Vitalidad Atlética</title>
+    <meta name="description" content="Activación Completa y Transformación Interna para la Vitalidad Atlética. Un método basado en la regulación neuroendocrina para el alto rendimiento.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Configuración Base y Paleta derivada del Logo */
+        :root {
+            --neon-cyan: #00f3ff;
+            --neon-magenta: #ff00ff;
+            --neon-orange: #ff9d00;
+            --dark-bg: #050505;
+            --panel-bg: #0a0a0a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Gradientes y Efectos Neon */
+        .text-gradient {
+            background: linear-gradient(to right, var(--neon-cyan), var(--neon-magenta), var(--neon-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .border-gradient {
+            background: linear-gradient(to right, var(--neon-cyan), var(--neon-magenta));
+            padding: 1px;
+            border-radius: 0.5rem;
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);
+        }
+
+        .neon-glow-hover:hover {
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Animaciones */
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        /* Modal de Salida */
+        .modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-fuchsia-500 selection:text-white">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Placeholder del Logo -->
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-400 via-fuchsia-500 to-orange-400 flex items-center justify-center text-white font-bold">
+                        A
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-white">MÉTODO <span class="text-cyan-400">ACTIVA</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#problema" class="hover:text-cyan-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">El Problema</a>
+                        <a href="#metodo" class="hover:text-fuchsia-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">El Método</a>
+                        <a href="#testimonios" class="hover:text-orange-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Resultados</a>
+                        <a href="#faq" class="hover:text-gray-300 transition-colors px-3 py-2 rounded-md text-sm font-medium">Preguntas</a>
+                        <button onclick="document.getElementById('contacto').scrollIntoView()" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-5 py-2 rounded-full font-bold text-sm transition-all shadow-lg shadow-cyan-500/20">
+                            Empezar Ahora
+                        </button>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-black border-b border-gray-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#problema" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">El Problema</a>
+                <a href="#metodo" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">El Método</a>
+                <a href="#testimonios" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Resultados</a>
+                <a href="#contacto" class="text-cyan-400 font-bold block px-3 py-2 rounded-md text-base">Empezar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full z-0 pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-fuchsia-600/20 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8 animate-pulse-slow">
+                <span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+                <span class="text-sm font-medium text-gray-300 tracking-wide uppercase">Ciencia del Alto Rendimiento</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
+                El rendimiento no depende solo del músculo. <br>
+                <span class="text-gradient">Depende de tu Energía Vital.</span>
+            </h1>
+            
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400 font-light leading-relaxed">
+                El entrenamiento tradicional tiene un techo. Rompelo gestionando tu sistema nervioso, tu regulación neuroendocrina y tu potencia interna. 
+                <strong class="text-white">La fuerza visible nace de una estabilidad invisible.</strong>
+            </p>
+
+            <div class="mt-10 flex justify-center gap-4 flex-col sm:flex-row">
+                <a href="#contacto" class="group relative px-8 py-4 bg-white text-black font-bold rounded-lg overflow-hidden transition-all hover:scale-105">
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-orange-400 opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                    <span class="relative flex items-center gap-2">
+                        Desbloquear mi Potencial
+                        <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </a>
+                <a href="#metodo" class="px-8 py-4 border border-white/20 hover:border-white/50 text-gray-300 hover:text-white rounded-lg font-medium transition-all backdrop-blur-sm">
+                    Cómo funciona
+                </a>
+            </div>
+
+            <!-- Social Proof simple -->
+            <p class="mt-8 text-sm text-gray-500">Basado en evidencia científica de fisiología del esfuerzo y neuroendocrinología.</p>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS ANIMADAS -->
+    <section class="py-12 border-y border-white/5 bg-black/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center" id="stats-container">
+                <div class="p-6">
+                    <div class="text-4xl md:text-5xl font-black text-white mb-2 flex justify-center items-baseline">
+                        <span class="counter" data-target="50">0</span>%
+                    </div>
+                    <p class="text-gray-400 text-sm uppercase tracking-wider">De la eficacia de fuerza depende de la <span class="text-cyan-400">activación interna</span></p>
+                </div>
+                <div class="p-6 border-l-0 md:border-l border-r-0 md:border-r border-white/10">
+                    <div class="text-4xl md:text-5xl font-black text-white mb-2">
+                        <span class="counter" data-target="3">0</span>x
+                    </div>
+                    <p class="text-gray-400 text-sm uppercase tracking-wider">Mejora en la velocidad de <span class="text-fuchsia-400">recuperación</span> neuroendocrina</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl md:text-5xl font-black text-white mb-2">
+                        <span class="counter" data-target="100">0</span>%
+                    </div>
+                    <p class="text-gray-400 text-sm uppercase tracking-wider">Enfoque en <span class="text-orange-400">claridad mental</span> bajo presión</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMA / SOLUCIÓN -->
+    <section id="problema" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <!-- El Problema -->
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-white mb-6">
+                        ¿Por qué los atletas estancan su rendimiento?
+                    </h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        El paradigma clásico se centra en tres pilares: fuerza muscular, capacidad cardiovascular y técnica. Pero la ciencia moderna revela que el techo aparece mucho antes cuando el atleta no logra regular su carga interna.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center border border-red-500/20">
+                                <i class="fas fa-bolt text-red-500"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-white">Fatiga del Sistema Nervioso</h3>
+                                <p class="mt-1 text-gray-500 text-sm">Entrenás el músculo, pero tu sistema nervioso simpático está saturado, generando rigidez y lentitud.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center border border-red-500/20">
+                                <i class="fas fa-brain text-red-500"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-white">Niebla Mental bajo Presión</h3>
+                                <p class="mt-1 text-gray-500 text-sm">Técnicamente sos bueno, pero en los momentos decisivos la ansiedad secuestra tu claridad táctica.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center border border-red-500/20">
+                                <i class="fas fa-battery-quarter text-red-500"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-white">Recuperación Incompleta</h3>
+                                <p class="mt-1 text-gray-500 text-sm">Descansar no es solo dormir. Si tu eje neuroendocrino no se apaga, seguís gastando energía vital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- La Solución (Card Visual) -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-fuchsia-500 rounded-2xl blur-2xl opacity-20 transform rotate-3"></div>
+                    <div class="relative bg-[#0a0a0a] border border-white/10 rounded-2xl p-8 shadow-2xl">
+                        <div class="flex items-center justify-between mb-8">
+                            <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">La Solución ACTIVA</h3>
+                            <i class="fas fa-check-circle text-cyan-400 text-2xl"></i>
+                        </div>
+                        <p class="text-gray-300 mb-6">
+                            Un método de activación integral que alinea tu sistema nervioso, tu campo energético y tus mecanismos de autorregulación.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-chevron-right text-fuchsia-500 mr-3 text-xs"></i>
+                                Regulación Autonómica (Simpático/Parasimpático)
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-chevron-right text-fuchsia-500 mr-3 text-xs"></i>
+                                Gestión de Energía Vital (Más allá de la glucosa)
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-chevron-right text-fuchsia-500 mr-3 text-xs"></i>
+                                Estabilidad Emocional y Cognitiva
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-chevron-right text-fuchsia-500 mr-3 text-xs"></i>
+                                Potencia Sostenible sin Desgaste
+                            </li>
+                        </ul>
+                        <div class="mt-8 pt-8 border-t border-white/10 text-center">
+                            <p class="text-sm text-gray-500 italic">"El verdadero atleta crece por dentro antes de crecer por fuera."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EL MÉTODO (CÓMO FUNCIONA) -->
+    <section id="metodo" class="py-24 bg-[#080808]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Protocolo de 4 Fases</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    El Método ACTIVA no es teoría abstracta. Es una ingeniería de activación interna aplicable antes, durante y después de la competencia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Fase 1 -->
+                <div class="group p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-cyan-400 font-black text-6xl opacity-20 mb-4 group-hover:opacity-100 transition-opacity">01</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Alineación</h3>
+                    <p class="text-sm text-gray-400">
+                        Preparación neurofisiológica inicial. Estabilizamos el sistema nervioso y eliminamos el ruido mental para crear una base "limpia" antes del esfuerzo.
+                    </p>
+                </div>
+
+                <!-- Fase 2 -->
+                <div class="group p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-fuchsia-400 font-black text-6xl opacity-20 mb-4 group-hover:opacity-100 transition-opacity">02</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Activación</h3>
+                    <p class="text-sm text-gray-400">
+                        Encendido energético interno. Estimulación diafragmática y neuroendocrina ligera para despertar la potencia sin generar estrés prematuro.
+                    </p>
+                </div>
+
+                <!-- Fase 3 -->
+                <div class="group p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-orange-400 font-black text-6xl opacity-20 mb-4 group-hover:opacity-100 transition-opacity">03</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Expansión</h3>
+                    <p class="text-sm text-gray-400">
+                        El estado de flujo competitivo. Alta disponibilidad de energía, enfoque atencional expandido y claridad total para la toma de decisiones bajo presión.
+                    </p>
+                </div>
+
+                <!-- Fase 4 -->
+                <div class="group p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-green-400 font-black text-6xl opacity-20 mb-4 group-hover:opacity-100 transition-opacity">04</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Recuperación</h3>
+                    <p class="text-sm text-gray-400">
+                        Retorno fisiológico dirigido. Técnicas parasimpáticas para bajar el cortisol inmediatamente, acelerando la regeneración para el próximo desafío.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS (ROLES) -->
+    <section id="testimonios" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">Resultados en Diferentes Disciplinas</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-[#0f0f0f] p-8 rounded-2xl border border-white/5 relative">
+                    <i class="fas fa-quote-right absolute top-6 right-6 text-gray-700 text-4xl"></i>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-xl">🏃‍♂️</div>
+                        <div>
+                            <h4 class="text-white font-bold">Deporte Explosivo</h4>
+                            <span class="text-xs text-cyan-400 uppercase tracking-wider">Velocidad / Atletismo</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm italic">
+                        "Antes mi potencia era intermitente. Con ACTIVA logré una sincronización neuromuscular que me permite explotar en el momento exacto sin ansiedad previa. La diferencia en la salida es brutal."
+                    </p>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="bg-[#0f0f0f] p-8 rounded-2xl border-gradient relative neon-glow">
+                    <i class="fas fa-quote-right absolute top-6 right-6 text-gray-700 text-4xl"></i>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-xl">🧠</div>
+                        <div>
+                            <h4 class="text-white font-bold">Rol Estratégico</h4>
+                            <span class="text-xs text-fuchsia-400 uppercase tracking-wider">Capitán / Mediocampista</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm italic">
+                        "Lo que más cambió fue mi claridad mental en los minutos finales. Cuando todos están ahogados, yo siento que el juego va más lento. Tomo mejores decisiones porque mi energía interna está ordenada."
+                    </p>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="bg-[#0f0f0f] p-8 rounded-2xl border border-white/5 relative">
+                    <i class="fas fa-quote-right absolute top-6 right-6 text-gray-700 text-4xl"></i>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-xl">🎾</div>
+                        <div>
+                            <h4 class="text-white font-bold">Deporte Individual</h4>
+                            <span class="text-xs text-orange-400 uppercase tracking-wider">Tenis / Pádel</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm italic">
+                        "La recuperación entre puntos es otra cosa. Aprendí a usar las micro-transiciones para bajar pulsaciones y resetear el foco. Ya no pierdo sets por frustración."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-black/50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-white mb-10">Preguntas Frecuentes</h2>
+            
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <div class="border border-white/10 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left bg-[#0a0a0a] hover:bg-[#111] transition-colors flex justify-between items-center text-white font-medium">
+                        ¿Es esto solo técnicas de relajación?
+                        <i class="fas fa-plus text-cyan-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-[#0a0a0a] text-gray-400 text-sm border-t border-white/5">
+                        No. La relajación es pasiva; ACTIVA es gestión estratégica. Usamos la activación parasimpática para estabilizar, pero el objetivo es el alto rendimiento, la potencia y la claridad cognitiva, no dormir.
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="border border-white/10 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left bg-[#0a0a0a] hover:bg-[#111] transition-colors flex justify-between items-center text-white font-medium">
+                        ¿Sirve para deportes de equipo?
+                        <i class="fas fa-plus text-cyan-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-[#0a0a0a] text-gray-400 text-sm border-t border-white/5">
+                        Absolutamente. De hecho, mejora la cohesión y la inteligencia situacional. Adaptamos los protocolos según tu rol (defensa, ataque, conducción) para potenciar tu función específica.
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="border border-white/10 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left bg-[#0a0a0a] hover:bg-[#111] transition-colors flex justify-between items-center text-white font-medium">
+                        ¿Necesito equipo especial?
+                        <i class="fas fa-plus text-cyan-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-[#0a0a0a] text-gray-400 text-sm border-t border-white/5">
+                        No. ACTIVA trabaja sobre tu "tecnología interna". Solo necesitás tu cuerpo, consciencia y espacio para aplicar los protocolos antes y después de entrenar.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA IRRESISTIBLE / CTA FINAL -->
+    <section id="contacto" class="py-24 relative overflow-hidden">
+        <!-- Glow effect -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-900/10 to-black pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+                Tu cuerpo tiene más potencia de la que estás usando.
+            </h2>
+            <p class="text-xl text-gray-300 mb-10">
+                Dejá de entrenar a ciegas. Integrá la regulación neuroendocrina a tu preparación y descubrí tu verdadera vitalidad atlética.
+            </p>
+
+            <div class="bg-[#111] p-8 rounded-2xl border border-white/10 max-w-md mx-auto shadow-2xl shadow-cyan-900/20">
+                <h3 class="text-2xl font-bold text-white mb-2">Comenzar Asesoría</h3>
+                <p class="text-gray-400 text-sm mb-6">Consultá por planes para atletas individuales o planteles.</p>
+                
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Gracias por tu interés en Método ACTIVA. Pronto nos pondremos en contacto.');">
+                    <div>
+                        <input type="text" placeholder="Tu Nombre" class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Tu Email" class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                    </div>
+                    <div>
+                        <select class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-gray-400 focus:outline-none focus:border-cyan-400 transition-colors">
+                            <option>Soy Atleta</option>
+                            <option>Soy Entrenador</option>
+                            <option>Represento a un Club</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-cyan-500/25">
+                        SOLICITAR INFORMACIÓN
+                    </button>
+                    <p class="text-xs text-gray-500 mt-4">
+                        <i class="fas fa-lock mr-1"></i> Tus datos están 100% seguros. Garantía de confidencialidad profesional.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="font-bold text-xl tracking-tight text-white">MÉTODO <span class="text-cyan-400">ACTIVA</span></span>
+                <p class="text-xs text-gray-500 mt-2">© 2024 Todos los derechos reservados.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EXIT INTENT POPUP (Simulated) -->
+    <div id="exit-modal" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm">
+        <div class="bg-[#111] border border-white/20 p-8 rounded-2xl max-w-lg w-full relative mx-4 shadow-2xl shadow-fuchsia-900/40">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-fuchsia-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-gift text-fuchsia-400 text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-2">¡Esperá! No te vayas sin tu guía.</h3>
+                <p class="text-gray-300 mb-6 text-sm">
+                    Descargá gratis el capítulo 1 sobre <strong>"Fundamento Científico de la Activación Interna"</strong> y entendé por qué estás estancado.
+                </p>
+                <button class="w-full bg-white text-black font-bold py-3 rounded-lg hover:bg-gray-200 transition-colors mb-3">
+                    QUIERO EL CAPÍTULO GRATIS
+                </button>
+                <button class="text-gray-500 text-xs hover:text-gray-300 underline" onclick="document.getElementById('exit-modal').classList.add('hidden')">
+                    No, gracias. Prefiero seguir entrenando igual.
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                
+                if(!content.classList.contains('hidden')) {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                    icon.classList.add('text-fuchsia-400');
+                } else {
+                    icon.classList.add('fa-plus');
+                    icon.classList.remove('fa-minus');
+                    icon.classList.remove('text-fuchsia-400');
+                }
+            });
+        });
+
+        // Animated Stats (Intersection Observer)
+        const statsSection = document.getElementById('stats-container');
+        const counters = document.querySelectorAll('.counter');
+        let started = false;
+
+        const startCounting = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const speed = 2000 / target; // Ajuste de velocidad
+
+                const updateCount = () => {
+                    const count = +counter.innerText;
+                    const inc = target / 100; // Incremento
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && !started) {
+                startCounting();
+                started = true;
+            }
+        });
+
+        observer.observe(statsSection);
+
+        // Exit Intent Logic (Mouse leave top of screen)
+        const modal = document.getElementById('exit-modal');
+        const closeModal = document.getElementById('close-modal');
+        let modalShown = false;
+
+        document.addEventListener('mouseleave', (e) => {
+            if (e.clientY < 0 && !modalShown) {
+                modal.classList.remove('hidden');
+                modalShown = true;
+            }
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // Close modal on click outside
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
